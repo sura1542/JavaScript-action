@@ -21,6 +21,7 @@ async function run() {
     )
   } catch (error) {
     // Fail the workflow step if an error occurs
+    // commit the action to fail
     core.setFailed(error.message)
   }
 }
